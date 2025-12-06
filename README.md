@@ -51,6 +51,5 @@ SOCify/
  │   ├── install-agent.ps1
  │   ├── install-agent.sh
  │   └── build-all.sh
-```─ README.md
-
-``
+─ README.md
+```
