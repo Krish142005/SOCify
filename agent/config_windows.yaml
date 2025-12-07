@@ -1,0 +1,22 @@
+backend_url: "http://localhost:8000/api/ingest/windows-events"
+
+event_logs:
+  - name: "Application"
+    enabled: true
+  - name: "System"
+    enabled: true
+  - name: "Security"
+    enabled: true
+
+agent:
+  batch_size: 10
+  flush_interval: "5s"
+  max_retries: 3
+  retry_delay: "2s"
+  buffer_size: 1000
+
+metadata:
+  tags:
+    - "windows"
+    - "event-log"
+    - "production"

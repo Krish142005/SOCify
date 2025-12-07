@@ -1,0 +1,790 @@
+2025-11-22 10:23:37,591 - __main__ - INFO - Windows Event Collector initialized
+2025-11-22 10:23:37,591 - __main__ - INFO - Backend URL: http://localhost:8000/api/ingest
+2025-11-22 10:23:37,592 - __main__ - INFO - Hostname: Shubhang
+2025-11-22 10:23:37,592 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-11-22 10:23:37,592 - __main__ - INFO - Starting Windows Event Collector...
+2025-11-22 10:23:37,604 - __main__ - INFO - Batch sender thread started
+2025-11-22 10:23:37,605 - __main__ - INFO - Starting monitoring for Application log
+2025-11-22 10:23:37,605 - __main__ - INFO - Starting monitoring for System log
+2025-11-22 10:23:37,606 - __main__ - INFO - Starting monitoring for Security log
+2025-11-22 10:23:37,606 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-11-22 10:23:37,607 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-11-22 10:23:37,608 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-11-22 10:23:37,608 - __main__ - INFO - Monitoring Security log - waiting for new events...
+2025-11-22 10:23:46,783 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/ingest (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FE03AD7690>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 10:23:51,861 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/ingest (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FE051FB710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 10:23:57,939 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/ingest (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FE05205F10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 10:23:57,940 - __main__ - ERROR - Failed to send 3 events after 3 attempts
+2025-11-22 10:24:02,055 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/ingest (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FE05218250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 10:24:07,163 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/ingest (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FE051FB190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 10:24:13,249 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/ingest (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FE051F8550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 10:24:13,249 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 10:24:17,369 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/ingest (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FE05204F10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 10:24:22,438 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/ingest (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FE0521A310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 10:24:30,948 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/ingest (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001FE05220550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 10:24:30,948 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 10:25:12,070 - __main__ - INFO - Shutdown signal received...
+2025-11-22 10:25:12,070 - __main__ - INFO - Waiting for threads to finish...
+2025-11-22 10:25:12,281 - __main__ - INFO - Stopped monitoring Application log (processed 1 events)
+2025-11-22 10:25:12,283 - __main__ - INFO - Stopped monitoring System log (processed 1 events)
+2025-11-22 10:25:12,323 - __main__ - INFO - Stopped monitoring Security log (processed 3 events)
+2025-11-22 10:25:12,330 - __main__ - INFO - Batch sender thread stopped
+2025-11-22 10:25:12,331 - __main__ - INFO - Windows Event Collector stopped
+2025-11-22 10:25:25,045 - __main__ - INFO - Windows Event Collector initialized
+2025-11-22 10:25:25,045 - __main__ - INFO - Backend URL: http://localhost:8001/api/ingest
+2025-11-22 10:25:25,046 - __main__ - INFO - Hostname: Shubhang
+2025-11-22 10:25:25,046 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-11-22 10:25:25,046 - __main__ - INFO - Starting Windows Event Collector...
+2025-11-22 10:25:25,058 - __main__ - INFO - Batch sender thread started
+2025-11-22 10:25:25,058 - __main__ - INFO - Starting monitoring for Application log
+2025-11-22 10:25:25,059 - __main__ - INFO - Starting monitoring for System log
+2025-11-22 10:25:25,059 - __main__ - INFO - Starting monitoring for Security log
+2025-11-22 10:25:25,060 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-11-22 10:25:25,060 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-11-22 10:25:25,060 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-11-22 10:25:25,062 - __main__ - INFO - Monitoring Security log - waiting for new events...
+2025-11-22 10:25:32,311 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:23:47","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}},{"@timestamp":"2025-11-22T10:22:35","event":{"source":"Software Protection Platform Service","id":16384,"level":"Information","message":"Successfully scheduled Software Protection service for re-start at 2026-01-24T18:11:35Z. Reason: RulesEngine.\r\n","category":0,"type":4,"original":"Successfully scheduled Software Protection service for re-start at 2026-01-24T18:11:35Z. Reason: RulesEngine.\r\n"},"log":{"source":"application","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"]},{"@timestamp":"2025-11-22T10:19:42","event":{"source":"Service Control Manager","id":7040,"level":"Information","message":"The start type of the McAfee Scheduled Task - (McAfee-Dynamicappdownloader) service was changed from demand start to disabled.\r\n","category":0,"type":4,"original":"The start type of the McAfee Scheduled Task - (McAfee-Dynamicappdownloader) service was changed from demand start to disabled.\r\n"},"log":{"source":"system","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"]}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:25:34,367 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:23:47","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}},{"@timestamp":"2025-11-22T10:22:35","event":{"source":"Software Protection Platform Service","id":16384,"level":"Information","message":"Successfully scheduled Software Protection service for re-start at 2026-01-24T18:11:35Z. Reason: RulesEngine.\r\n","category":0,"type":4,"original":"Successfully scheduled Software Protection service for re-start at 2026-01-24T18:11:35Z. Reason: RulesEngine.\r\n"},"log":{"source":"application","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"]},{"@timestamp":"2025-11-22T10:19:42","event":{"source":"Service Control Manager","id":7040,"level":"Information","message":"The start type of the McAfee Scheduled Task - (McAfee-Dynamicappdownloader) service was changed from demand start to disabled.\r\n","category":0,"type":4,"original":"The start type of the McAfee Scheduled Task - (McAfee-Dynamicappdownloader) service was changed from demand start to disabled.\r\n"},"log":{"source":"system","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"]}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:25:36,426 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:23:47","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}},{"@timestamp":"2025-11-22T10:22:35","event":{"source":"Software Protection Platform Service","id":16384,"level":"Information","message":"Successfully scheduled Software Protection service for re-start at 2026-01-24T18:11:35Z. Reason: RulesEngine.\r\n","category":0,"type":4,"original":"Successfully scheduled Software Protection service for re-start at 2026-01-24T18:11:35Z. Reason: RulesEngine.\r\n"},"log":{"source":"application","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"]},{"@timestamp":"2025-11-22T10:19:42","event":{"source":"Service Control Manager","id":7040,"level":"Information","message":"The start type of the McAfee Scheduled Task - (McAfee-Dynamicappdownloader) service was changed from demand start to disabled.\r\n","category":0,"type":4,"original":"The start type of the McAfee Scheduled Task - (McAfee-Dynamicappdownloader) service was changed from demand start to disabled.\r\n"},"log":{"source":"system","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"]}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:25:36,428 - __main__ - ERROR - Failed to send 3 events after 3 attempts
+2025-11-22 10:26:09,251 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:26:05","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:26:11,322 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:26:05","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:26:13,381 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:26:05","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:26:13,383 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 10:26:15,430 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:26:05","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:26:17,467 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:26:05","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:26:19,534 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:26:05","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:26:19,534 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 10:28:10,566 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:28:07","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:28:15,307 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:28:07","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:28:17,360 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:28:07","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:28:17,360 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 10:28:19,411 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:28:07","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:28:21,477 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:28:07","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:28:23,529 - __main__ - WARNING - Backend returned 422: {"detail":[{"type":"missing","loc":["body","raw_log"],"msg":"Field required","input":{"logs":[{"@timestamp":"2025-11-22T10:28:07","event":{"source":"Microsoft-Windows-Security-Auditing","id":4798,"level":"Audit Success","message":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n","category":13824,"type":8,"original":"A user's local group membership was enumerated.\r\n\r\nSubject:\r\n\tSecurity ID:\t\tS-1-5-18\r\n\tAccount Name:\t\tSHUBHANG$\r\n\tAccount Domain:\t\tWORKGROUP\r\n\tLogon ID:\t\t0x3e7\r\n\r\nUser:\r\n\tSecurity ID:\t\tS-1-5-21-1300346274-3540962253-3317493747-1001\r\n\tAccount Name:\t\t91751\r\n\tAccount Domain:\t\tShubhang\r\n\r\nProcess Information:\r\n\tProcess ID:\t\t0xeb0\r\n\tProcess Name:\t\tC:\\Windows\\System32\\svchost.exe\r\n"},"log":{"source":"security","type":"windows_event"},"host":{"name":"Shubhang","os":{"family":"windows","version":"10"}},"agent":{"name":"windows_event_collector","type":"log-collector"},"tags":["windows","event-log"],"user":{"name":"Security"}}],"source":"windows_event_collector","metadata":{"hostname":"Shubhang","os_family":"windows","os_version":10,"collector":"windows_event_collector","tags":["windows","event-log"]}},"url":"https://errors.pydantic.dev/2.5/v/missing"}]}
+2025-11-22 10:28:23,530 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 10:28:51,881 - __main__ - INFO - Shutdown signal received...
+2025-11-22 10:28:51,882 - __main__ - INFO - Waiting for threads to finish...
+2025-11-22 10:28:51,998 - __main__ - INFO - Stopped monitoring System log (processed 1 events)
+2025-11-22 10:28:52,067 - __main__ - INFO - Stopped monitoring Application log (processed 1 events)
+2025-11-22 10:28:52,074 - __main__ - INFO - Stopped monitoring Security log (processed 5 events)
+2025-11-22 10:28:52,820 - __main__ - INFO - Batch sender thread stopped
+2025-11-22 10:28:52,821 - __main__ - INFO - Windows Event Collector stopped
+2025-11-22 10:29:09,046 - __main__ - INFO - Windows Event Collector initialized
+2025-11-22 10:29:09,047 - __main__ - INFO - Backend URL: http://localhost:8001/api/ingest/windows-events
+2025-11-22 10:29:09,047 - __main__ - INFO - Hostname: Shubhang
+2025-11-22 10:29:09,047 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-11-22 10:29:09,048 - __main__ - INFO - Starting Windows Event Collector...
+2025-11-22 10:29:09,059 - __main__ - INFO - Batch sender thread started
+2025-11-22 10:29:09,059 - __main__ - INFO - Starting monitoring for Application log
+2025-11-22 10:29:09,059 - __main__ - INFO - Starting monitoring for System log
+2025-11-22 10:29:09,060 - __main__ - INFO - Starting monitoring for Security log
+2025-11-22 10:29:09,060 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-11-22 10:29:09,061 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-11-22 10:29:09,062 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-11-22 10:29:09,062 - __main__ - INFO - Monitoring Security log - waiting for new events...
+2025-11-22 10:29:18,246 - __main__ - INFO - Sent 3 events to backend
+2025-11-22 10:30:11,230 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:30:16,776 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:32:19,620 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:32:25,288 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:33:19,696 - __main__ - INFO - Shutdown signal received...
+2025-11-22 10:33:19,696 - __main__ - INFO - Waiting for threads to finish...
+2025-11-22 10:33:19,795 - __main__ - INFO - Batch sender thread stopped
+2025-11-22 10:33:20,045 - __main__ - INFO - Stopped monitoring System log (processed 1 events)
+2025-11-22 10:33:20,047 - __main__ - INFO - Stopped monitoring Application log (processed 1 events)
+2025-11-22 10:33:20,056 - __main__ - INFO - Stopped monitoring Security log (processed 5 events)
+2025-11-22 10:33:20,058 - __main__ - INFO - Windows Event Collector stopped
+2025-11-22 10:34:12,483 - __main__ - INFO - Windows Event Collector initialized
+2025-11-22 10:34:12,483 - __main__ - INFO - Backend URL: http://localhost:8001/api/ingest/windows-events
+2025-11-22 10:34:12,484 - __main__ - INFO - Hostname: Shubhang
+2025-11-22 10:34:12,484 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-11-22 10:34:12,484 - __main__ - INFO - Starting Windows Event Collector...
+2025-11-22 10:34:12,496 - __main__ - INFO - Batch sender thread started
+2025-11-22 10:34:12,496 - __main__ - INFO - Starting monitoring for Application log
+2025-11-22 10:34:12,497 - __main__ - INFO - Starting monitoring for System log
+2025-11-22 10:34:12,497 - __main__ - INFO - Starting monitoring for Security log
+2025-11-22 10:34:12,497 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-11-22 10:34:12,498 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-11-22 10:34:12,499 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-11-22 10:34:12,502 - __main__ - INFO - Monitoring Security log - waiting for new events...
+2025-11-22 10:34:20,378 - __main__ - INFO - Sent 3 events to backend
+2025-11-22 10:35:50,412 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:35:58,662 - __main__ - INFO - Sent 5 events to backend
+2025-11-22 10:36:01,296 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:36:07,061 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:36:32,910 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:36:37,971 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 10:37:03,400 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:37:52,512 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:37:58,023 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:38:14,616 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:38:20,743 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:39:20,185 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:39:26,032 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:39:58,875 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:40:04,767 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:41:32,250 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:41:37,898 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:41:44,841 - __main__ - INFO - Sent 6 events to backend
+2025-11-22 10:43:21,581 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:43:28,419 - __main__ - INFO - Sent 5 events to backend
+2025-11-22 10:44:20,904 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:44:26,944 - __main__ - INFO - Sent 3 events to backend
+2025-11-22 10:44:58,736 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:45:04,306 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:46:45,908 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:46:51,506 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:47:04,482 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:47:11,520 - __main__ - INFO - Sent 5 events to backend
+2025-11-22 10:48:10,066 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:48:14,135 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 10:48:25,569 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:48:31,560 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 10:48:35,180 - __main__ - INFO - Sent 3 events to backend
+2025-11-22 10:48:40,783 - __main__ - INFO - Sent 5 events to backend
+2025-11-22 10:53:29,275 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:53:34,936 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 10:53:59,498 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:57:17,101 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:57:22,057 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:57:47,322 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:57:53,083 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 10:57:59,091 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 10:58:16,460 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 10:58:22,548 - __main__ - INFO - Sent 4 events to backend
+2025-11-22 11:00:30,115 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:00:36,207 - __main__ - INFO - Sent 5 events to backend
+2025-11-22 11:00:43,970 - __main__ - INFO - Sent 7 events to backend
+2025-11-22 11:00:52,330 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:00:52,402 - __main__ - INFO - Application: Processed 100 events
+2025-11-22 11:00:52,956 - __main__ - INFO - Application: Processed 200 events
+2025-11-22 11:00:52,999 - __main__ - INFO - Application: Processed 300 events
+2025-11-22 11:00:53,550 - __main__ - INFO - Application: Processed 400 events
+2025-11-22 11:00:53,587 - __main__ - INFO - Application: Processed 500 events
+2025-11-22 11:00:54,123 - __main__ - INFO - Application: Processed 600 events
+2025-11-22 11:00:54,669 - __main__ - INFO - Application: Processed 700 events
+2025-11-22 11:00:54,736 - __main__ - INFO - Application: Processed 800 events
+2025-11-22 11:00:55,302 - __main__ - INFO - Application: Processed 900 events
+2025-11-22 11:00:55,343 - __main__ - INFO - Application: Processed 1000 events
+2025-11-22 11:00:56,131 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:00:59,680 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:02,726 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:05,816 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:08,743 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:11,682 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:15,328 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:18,322 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:21,308 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:24,468 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:27,465 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:30,460 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:33,576 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:36,530 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:39,421 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:43,203 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:46,187 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:49,283 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:52,130 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:55,086 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:01:58,025 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:01,096 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:04,130 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:07,091 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:10,415 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:13,286 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:16,335 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:19,445 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:22,285 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:25,110 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:27,953 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:30,967 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:33,940 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:37,346 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:40,255 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:43,098 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:46,040 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:49,209 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:52,261 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:55,769 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:02:58,670 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:01,712 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:05,072 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:08,186 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:11,093 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:14,017 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:16,936 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:19,892 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:22,866 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:26,083 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:29,286 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:32,834 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:35,942 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:38,920 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:42,580 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:45,463 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:48,436 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:51,226 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:53,906 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:03:56,870 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:00,503 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:03,392 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:06,720 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:10,112 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:13,236 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:16,419 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:19,674 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:22,872 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:25,931 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:29,657 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:34,196 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:38,221 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:41,632 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:44,668 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:48,234 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:51,424 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:54,734 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:04:57,834 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:02,013 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:05,236 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:08,521 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:11,693 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:14,948 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:18,574 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:22,146 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:25,571 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:28,902 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:32,323 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:35,404 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:38,103 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:40,766 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:43,538 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:46,253 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:48,989 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:51,763 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:54,516 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:05:57,499 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:06:00,175 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:06:02,843 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:06:05,510 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:06:08,412 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:06:11,966 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:06:16,052 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:06:21,346 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:06:24,299 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:06:30,716 - __main__ - INFO - Sent 9 events to backend
+2025-11-22 11:14:25,742 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:15:05,912 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:15:18,971 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:15:33,008 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:15:33,008 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:17:40,815 - __main__ - INFO - Security: Processed 100 events
+2025-11-22 11:17:51,226 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:18:04,307 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:18:18,380 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:18:18,381 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:18:30,438 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:18:43,491 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:18:57,534 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:18:57,536 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:19:09,600 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:19:22,680 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:19:36,747 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:19:36,747 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:19:48,775 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:20:01,861 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:20:15,919 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:20:15,925 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:20:28,013 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:20:41,109 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:20:55,175 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:20:55,176 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:21:07,257 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:21:20,313 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:21:34,364 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:21:34,365 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:21:46,432 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:21:59,486 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:22:13,540 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:22:13,541 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:22:25,585 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:22:38,643 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:22:52,717 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:22:52,717 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:23:04,769 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:23:17,816 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:23:31,889 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:23:31,890 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:23:43,942 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:23:57,008 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:24:11,048 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:24:11,048 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:24:23,116 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:24:36,170 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:24:50,229 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:24:50,229 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:25:02,296 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:25:15,348 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:25:29,413 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:25:29,414 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:25:41,490 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Read timed out. (read timeout=10)
+2025-11-22 11:25:46,570 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0ED9250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:25:52,665 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0D119D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:25:52,666 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:25:56,773 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0EB8D50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:01,853 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0EDAAD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:07,947 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0EF2F90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:07,947 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:26:12,035 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0EA9690>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:17,133 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0EA9810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:23,224 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0D11510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:23,225 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:26:27,305 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0EF2D90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:32,403 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0EC0FD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:38,495 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0ED9890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:38,496 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:26:42,585 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0EA8090>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:47,683 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0F1AA10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:53,772 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0D17790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:26:53,773 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:26:57,860 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0EAB210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:27:02,960 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0EA8E10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:27:09,050 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013AF0EC1710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-22 11:27:09,051 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-11-22 11:27:11,585 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:27:16,729 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:27:19,826 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:27:25,743 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:27:28,252 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:27:31,657 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:27:36,726 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 11:27:39,670 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:27:45,496 - __main__ - INFO - Sent 4 events to backend
+2025-11-22 11:27:54,039 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:27:59,561 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:28:20,449 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:28:25,358 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:29:59,286 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:30:04,813 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:30:14,136 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:30:20,434 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 11:30:44,628 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:31:59,122 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:32:04,798 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:33:34,587 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:33:40,411 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:34:05,751 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:34:11,252 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:35:20,758 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:35:25,520 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:36:07,691 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:36:13,353 - __main__ - INFO - Sent 4 events to backend
+2025-11-22 11:36:18,409 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:36:24,105 - __main__ - INFO - Sent 7 events to backend
+2025-11-22 11:39:48,924 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:39:54,494 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:40:06,427 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:40:36,680 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:40:48,755 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:40:54,230 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 11:41:09,165 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:41:14,797 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:48:34,551 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:48:40,259 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:55:49,872 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:55:57,099 - __main__ - INFO - Sent 4 events to backend
+2025-11-22 11:57:17,389 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 11:57:23,115 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 11:57:47,801 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:00:02,544 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:00:47,542 - __main__ - INFO - Security: Processed 200 events
+2025-11-22 12:00:50,155 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:00:53,396 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:00:57,980 - __main__ - INFO - Sent 4 events to backend
+2025-11-22 12:03:35,080 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:03:39,816 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:06:39,868 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:06:44,949 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:06:45,409 - __main__ - INFO - Security: Processed 300 events
+2025-11-22 12:06:47,715 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:06:51,720 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:06:55,917 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:00,242 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:03,258 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:06,605 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:09,642 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:12,766 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:15,819 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:18,816 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:21,846 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:24,844 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:27,882 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:30,963 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:34,262 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:07:39,020 - __main__ - INFO - Sent 7 events to backend
+2025-11-22 12:10:57,503 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:11:03,406 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:11:56,253 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:12:01,722 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 12:18:34,839 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:18:40,520 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:20:50,685 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:21:31,543 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:21:38,227 - __main__ - INFO - Sent 4 events to backend
+2025-11-22 12:22:01,773 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:22:54,017 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:22:59,831 - __main__ - INFO - Sent 4 events to backend
+2025-11-22 12:27:42,975 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:27:48,609 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:28:41,410 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:28:47,540 - __main__ - INFO - Sent 4 events to backend
+2025-11-22 12:30:50,934 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:30:54,121 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:30:58,805 - __main__ - INFO - Sent 6 events to backend
+2025-11-22 12:31:14,463 - __main__ - INFO - Security: Processed 400 events
+2025-11-22 12:31:16,779 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:31:22,462 - __main__ - INFO - Sent 6 events to backend
+2025-11-22 12:32:36,378 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:32:42,998 - __main__ - INFO - Sent 3 events to backend
+2025-11-22 12:35:34,030 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:35:39,403 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:36:34,883 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:37:05,175 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:43:20,750 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:43:26,330 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:43:42,340 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:43:48,039 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 12:43:53,932 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 12:48:29,335 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:48:35,964 - __main__ - INFO - Sent 3 events to backend
+2025-11-22 12:48:41,089 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 12:48:46,782 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:48:49,780 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 12:48:54,276 - __main__ - INFO - Sent 4 events to backend
+2025-11-22 12:57:18,231 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:57:23,834 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:58:20,811 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 12:58:26,623 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:03:34,348 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:03:40,262 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:07:46,256 - __main__ - INFO - Security: Processed 500 events
+2025-11-22 13:07:48,799 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:07:51,851 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 13:07:54,671 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 13:07:57,523 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 13:08:00,327 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 13:08:03,095 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 13:08:05,886 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 13:08:08,869 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 13:08:13,535 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 13:18:30,915 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:18:36,970 - __main__ - INFO - Sent 3 events to backend
+2025-11-22 13:18:47,134 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:18:50,128 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 13:18:54,745 - __main__ - INFO - Sent 6 events to backend
+2025-11-22 13:21:04,307 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:21:32,872 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:21:39,325 - __main__ - INFO - Sent 4 events to backend
+2025-11-22 13:22:03,142 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:23:46,954 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:23:49,965 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 13:56:01,993 - __main__ - INFO - Sent 5 events to backend
+2025-11-22 13:56:06,039 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 13:56:09,350 - __main__ - INFO - Sent 10 events to backend
+2025-11-22 13:56:13,999 - __main__ - INFO - Sent 5 events to backend
+2025-11-22 13:56:19,461 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 13:56:30,074 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:56:35,523 - __main__ - INFO - Sent 4 events to backend
+2025-11-22 13:56:59,386 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:57:04,920 - __main__ - INFO - Sent 2 events to backend
+2025-11-22 13:57:24,502 - __main__ - INFO - Sent 1 events to backend
+2025-11-22 13:57:28,594 - __main__ - INFO - Sent 10 events to backend
+2025-12-05 12:21:12,331 - __main__ - INFO - Windows Event Collector initialized
+2025-12-05 12:21:12,332 - __main__ - INFO - Backend URL: http://localhost:8001/api/ingest/windows-events
+2025-12-05 12:21:12,332 - __main__ - INFO - Hostname: Shubhang
+2025-12-05 12:21:12,332 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-12-05 12:21:12,333 - __main__ - INFO - Starting Windows Event Collector...
+2025-12-05 12:21:12,346 - __main__ - INFO - Batch sender thread started
+2025-12-05 12:21:12,347 - __main__ - INFO - Starting monitoring for Application log
+2025-12-05 12:21:12,347 - __main__ - INFO - Starting monitoring for System log
+2025-12-05 12:21:12,349 - __main__ - INFO - Starting monitoring for Security log
+2025-12-05 12:21:12,349 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-12-05 12:21:12,352 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-12-05 12:21:12,352 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-12-05 12:21:12,352 - __main__ - INFO - Monitoring Security log - waiting for new events...
+2025-12-05 12:21:21,518 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3CF50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:21:26,606 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3F190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:21:32,710 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDA5350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:21:32,710 - __main__ - ERROR - Failed to send 3 events after 3 attempts
+2025-12-05 12:22:14,636 - __main__ - INFO - Windows Event Collector initialized
+2025-12-05 12:22:14,636 - __main__ - INFO - Backend URL: http://localhost:8000/api/ingest/windows-events
+2025-12-05 12:22:14,637 - __main__ - INFO - Hostname: Shubhang
+2025-12-05 12:22:14,637 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-12-05 12:22:14,637 - __main__ - INFO - Starting Windows Event Collector...
+2025-12-05 12:22:14,650 - __main__ - WARNING - Not running as Administrator - Security log may not be accessible
+2025-12-05 12:22:14,652 - __main__ - INFO - Batch sender thread started
+2025-12-05 12:22:14,652 - __main__ - INFO - Starting monitoring for Application log
+2025-12-05 12:22:14,653 - __main__ - INFO - Starting monitoring for System log
+2025-12-05 12:22:14,654 - __main__ - INFO - Starting monitoring for Security log
+2025-12-05 12:22:14,654 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-12-05 12:22:14,657 - __main__ - ERROR - Failed to monitor Security log: (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+Traceback (most recent call last):
+  File "C:\Users\91751\Downloads\Socify\agent\windows_event_collector.py", line 269, in _monitor_event_log
+    hand = win32evtlog.OpenEventLog(None, log_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywintypes.error: (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+2025-12-05 12:22:14,657 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-12-05 12:22:14,658 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-12-05 12:22:22,815 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:22:25,293 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:22:27,775 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:22:27,776 - __main__ - ERROR - Failed to send 2 events after 3 attempts
+2025-12-05 12:23:05,949 - __main__ - INFO - Shutdown signal received...
+2025-12-05 12:23:05,953 - __main__ - INFO - Waiting for threads to finish...
+2025-12-05 12:23:06,150 - __main__ - INFO - Batch sender thread stopped
+2025-12-05 12:23:06,272 - __main__ - INFO - Stopped monitoring Application log (processed 1 events)
+2025-12-05 12:23:06,335 - __main__ - INFO - Stopped monitoring System log (processed 1 events)
+2025-12-05 12:23:06,335 - __main__ - INFO - Windows Event Collector stopped
+2025-12-05 12:23:14,037 - __main__ - INFO - Windows Event Collector initialized
+2025-12-05 12:23:14,037 - __main__ - INFO - Backend URL: http://localhost:8000/api/ingest/windows-events
+2025-12-05 12:23:14,038 - __main__ - INFO - Hostname: Shubhang
+2025-12-05 12:23:14,038 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-12-05 12:23:14,038 - __main__ - INFO - Starting Windows Event Collector...
+2025-12-05 12:23:14,048 - __main__ - WARNING - Not running as Administrator - Security log may not be accessible
+2025-12-05 12:23:14,049 - __main__ - INFO - Batch sender thread started
+2025-12-05 12:23:14,049 - __main__ - INFO - Starting monitoring for Application log
+2025-12-05 12:23:14,051 - __main__ - INFO - Starting monitoring for System log
+2025-12-05 12:23:14,052 - __main__ - INFO - Starting monitoring for Security log
+2025-12-05 12:23:14,052 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-12-05 12:23:14,052 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-12-05 12:23:14,052 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-12-05 12:23:14,054 - __main__ - ERROR - Failed to monitor Security log: (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+Traceback (most recent call last):
+  File "C:\Users\91751\Downloads\Socify\agent\windows_event_collector.py", line 269, in _monitor_event_log
+    hand = win32evtlog.OpenEventLog(None, log_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywintypes.error: (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+2025-12-05 12:23:18,789 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDA7C10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:23:21,612 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:23:23,898 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3F550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:23:24,004 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:23:26,414 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:23:26,414 - __main__ - ERROR - Failed to send 2 events after 3 attempts
+2025-12-05 12:23:30,001 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3C150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:23:30,001 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:23:34,110 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDA4350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:23:39,216 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBDCD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:23:45,320 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBFE50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:23:45,321 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:24:52,721 - __main__ - INFO - Shutdown signal received...
+2025-12-05 12:24:52,721 - __main__ - INFO - Waiting for threads to finish...
+2025-12-05 12:24:52,749 - __main__ - INFO - Stopped monitoring System log (processed 1 events)
+2025-12-05 12:24:52,799 - __main__ - INFO - Stopped monitoring Application log (processed 1 events)
+2025-12-05 12:24:53,259 - __main__ - INFO - Batch sender thread stopped
+2025-12-05 12:24:53,261 - __main__ - INFO - Windows Event Collector stopped
+2025-12-05 12:24:56,990 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBF550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:25:02,091 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBE250>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:25:04,129 - __main__ - INFO - Windows Event Collector initialized
+2025-12-05 12:25:04,130 - __main__ - INFO - Backend URL: http://localhost:8000/api/ingest/windows-events
+2025-12-05 12:25:04,130 - __main__ - INFO - Hostname: Shubhang
+2025-12-05 12:25:04,130 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-12-05 12:25:04,131 - __main__ - INFO - Starting Windows Event Collector...
+2025-12-05 12:25:04,141 - __main__ - WARNING - Not running as Administrator - Security log may not be accessible
+2025-12-05 12:25:04,141 - __main__ - INFO - Batch sender thread started
+2025-12-05 12:25:04,142 - __main__ - INFO - Starting monitoring for Application log
+2025-12-05 12:25:04,143 - __main__ - INFO - Starting monitoring for System log
+2025-12-05 12:25:04,144 - __main__ - INFO - Starting monitoring for Security log
+2025-12-05 12:25:04,145 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-12-05 12:25:04,147 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-12-05 12:25:04,148 - __main__ - ERROR - Failed to monitor Security log: (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+Traceback (most recent call last):
+  File "C:\Users\91751\Downloads\Socify\agent\windows_event_collector.py", line 269, in _monitor_event_log
+    hand = win32evtlog.OpenEventLog(None, log_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywintypes.error: (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+2025-12-05 12:25:04,149 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-12-05 12:25:08,201 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBC210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:25:08,201 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:25:11,616 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:25:12,292 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDA5410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:25:14,552 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:25:16,904 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:25:16,905 - __main__ - ERROR - Failed to send 2 events after 3 attempts
+2025-12-05 12:25:17,380 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3EF10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:25:23,504 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDC2490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:25:23,504 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:26:03,180 - __main__ - INFO - Shutdown signal received...
+2025-12-05 12:26:03,182 - __main__ - INFO - Waiting for threads to finish...
+2025-12-05 12:26:03,267 - __main__ - INFO - Stopped monitoring System log (processed 1 events)
+2025-12-05 12:26:03,313 - __main__ - INFO - Stopped monitoring Application log (processed 1 events)
+2025-12-05 12:26:03,385 - __main__ - INFO - Batch sender thread stopped
+2025-12-05 12:26:03,385 - __main__ - INFO - Windows Event Collector stopped
+2025-12-05 12:26:13,430 - __main__ - INFO - Windows Event Collector initialized
+2025-12-05 12:26:13,431 - __main__ - INFO - Backend URL: http://localhost:8000/api/ingest/windows-events
+2025-12-05 12:26:13,431 - __main__ - INFO - Hostname: Shubhang
+2025-12-05 12:26:13,432 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-12-05 12:26:13,432 - __main__ - INFO - Starting Windows Event Collector...
+2025-12-05 12:26:13,441 - __main__ - WARNING - Not running as Administrator - Security log may not be accessible
+2025-12-05 12:26:13,441 - __main__ - INFO - Batch sender thread started
+2025-12-05 12:26:13,442 - __main__ - INFO - Starting monitoring for Application log
+2025-12-05 12:26:13,443 - __main__ - INFO - Starting monitoring for System log
+2025-12-05 12:26:13,444 - __main__ - INFO - Starting monitoring for Security log
+2025-12-05 12:26:13,444 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-12-05 12:26:13,444 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-12-05 12:26:13,444 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-12-05 12:26:13,446 - __main__ - ERROR - Failed to monitor Security log: (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+Traceback (most recent call last):
+  File "C:\Users\91751\Downloads\Socify\agent\windows_event_collector.py", line 269, in _monitor_event_log
+    hand = win32evtlog.OpenEventLog(None, log_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywintypes.error: (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+2025-12-05 12:26:20,957 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:26:23,364 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:26:25,788 - __main__ - WARNING - Backend returned 500: {"detail":"Ingestion failed: [Errno 2] No such file or directory: 'C:/Users/91751/OneDrive/Desktop/Socify3/backend/debug_log_abs.txt'"}
+2025-12-05 12:26:25,789 - __main__ - ERROR - Failed to send 2 events after 3 attempts
+2025-12-05 12:27:19,257 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD31750>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:27:24,377 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3F710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:27:30,457 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3C1D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:27:30,458 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:27:34,562 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDA41D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:27:39,668 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBE750>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:27:45,786 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDC2650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:27:45,787 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:27:49,864 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBFBD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:27:54,953 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBCDD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:28:01,046 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDA76D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:28:01,046 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:28:05,142 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3C810>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:28:10,217 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3F110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:28:16,328 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDC2BD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:28:16,329 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:28:20,443 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD31590>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:28:25,524 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDA4F10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:28:31,614 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3E4D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:28:31,615 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:28:35,719 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3E150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:28:40,796 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBE950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:28:46,886 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBFED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:28:46,886 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:29:33,016 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBEB50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:29:38,168 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDBEA50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:29:44,252 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD23910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:29:44,253 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:29:46,329 - __main__ - INFO - Shutdown signal received...
+2025-12-05 12:29:46,332 - __main__ - INFO - Waiting for threads to finish...
+2025-12-05 12:29:46,332 - __main__ - INFO - Stopped monitoring System log (processed 1 events)
+2025-12-05 12:29:46,668 - __main__ - INFO - Batch sender thread stopped
+2025-12-05 12:29:46,832 - __main__ - INFO - Stopped monitoring Application log (processed 1 events)
+2025-12-05 12:29:46,833 - __main__ - INFO - Windows Event Collector stopped
+2025-12-05 12:29:48,360 - __main__ - ERROR - Failed to send batch (attempt 1/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3E1D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:29:53,463 - __main__ - ERROR - Failed to send batch (attempt 2/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BD3F010>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:29:59,584 - __main__ - ERROR - Failed to send batch (attempt 3/3): HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /api/ingest/windows-events (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025C0BDC1710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-12-05 12:29:59,586 - __main__ - ERROR - Failed to send 1 events after 3 attempts
+2025-12-05 12:30:01,071 - __main__ - INFO - Windows Event Collector initialized
+2025-12-05 12:30:01,073 - __main__ - INFO - Backend URL: http://localhost:8000/api/ingest/windows-events
+2025-12-05 12:30:01,073 - __main__ - INFO - Hostname: Shubhang
+2025-12-05 12:30:01,073 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-12-05 12:30:01,073 - __main__ - INFO - Starting Windows Event Collector...
+2025-12-05 12:30:01,081 - __main__ - WARNING - Not running as Administrator - Security log may not be accessible
+2025-12-05 12:30:01,082 - __main__ - INFO - Batch sender thread started
+2025-12-05 12:30:01,083 - __main__ - INFO - Starting monitoring for Application log
+2025-12-05 12:30:01,084 - __main__ - INFO - Starting monitoring for System log
+2025-12-05 12:30:01,085 - __main__ - INFO - Starting monitoring for Security log
+2025-12-05 12:30:01,085 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-12-05 12:30:01,085 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-12-05 12:30:01,085 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-12-05 12:30:01,087 - __main__ - ERROR - Failed to monitor Security log: (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+Traceback (most recent call last):
+  File "C:\Users\91751\Downloads\Socify\agent\windows_event_collector.py", line 269, in _monitor_event_log
+    hand = win32evtlog.OpenEventLog(None, log_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywintypes.error: (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+2025-12-05 12:30:07,841 - __main__ - INFO - Shutdown signal received...
+2025-12-05 12:30:07,842 - __main__ - INFO - Waiting for threads to finish...
+2025-12-05 12:30:07,917 - __main__ - INFO - Stopped monitoring Application log (processed 1 events)
+2025-12-05 12:30:07,918 - __main__ - INFO - Stopped monitoring System log (processed 1 events)
+2025-12-05 12:30:08,002 - __main__ - INFO - Stopped monitoring Security log (processed 13 events)
+2025-12-05 12:30:08,578 - __main__ - INFO - Sent 2 events to backend
+2025-12-05 12:30:08,652 - __main__ - INFO - Batch sender thread stopped
+2025-12-05 12:35:51,631 - __main__ - INFO - Windows Event Collector initialized
+2025-12-05 12:35:51,632 - __main__ - INFO - Backend URL: http://localhost:8000/api/ingest/windows-events
+2025-12-05 12:35:51,633 - __main__ - INFO - Hostname: Shubhang
+2025-12-05 12:35:51,633 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-12-05 12:35:51,633 - __main__ - INFO - Starting Windows Event Collector...
+2025-12-05 12:35:51,647 - __main__ - INFO - Batch sender thread started
+2025-12-05 12:35:51,648 - __main__ - INFO - Starting monitoring for Application log
+2025-12-05 12:35:51,649 - __main__ - INFO - Starting monitoring for System log
+2025-12-05 12:35:51,650 - __main__ - INFO - Starting monitoring for Security log
+2025-12-05 12:35:51,650 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-12-05 12:35:51,652 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-12-05 12:35:51,652 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-12-05 12:35:51,655 - __main__ - INFO - Monitoring Security log - waiting for new events...
+2025-12-05 12:35:59,569 - __main__ - INFO - Sent 3 events to backend
+2025-12-05 12:47:24,847 - __main__ - INFO - Shutdown signal received...
+2025-12-05 12:47:24,849 - __main__ - INFO - Waiting for threads to finish...
+2025-12-05 12:47:24,914 - __main__ - INFO - Stopped monitoring System log (processed 5 events)
+2025-12-05 12:47:25,043 - __main__ - INFO - Stopped monitoring Application log (processed 10 events)
+2025-12-05 12:47:25,044 - __main__ - INFO - Stopped monitoring Security log (processed 45 events)
+2025-12-05 12:47:26,927 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:47:26,928 - __main__ - INFO - Batch sender thread stopped
+2025-12-05 12:47:26,929 - __main__ - INFO - Windows Event Collector stopped
+2025-12-05 12:47:36,510 - __main__ - INFO - Windows Event Collector initialized
+2025-12-05 12:47:36,511 - __main__ - INFO - Backend URL: http://localhost:8000/api/ingest/windows-events
+2025-12-05 12:47:36,511 - __main__ - INFO - Hostname: Shubhang
+2025-12-05 12:47:36,511 - __main__ - INFO - Monitoring logs: ['Application', 'System', 'Security']
+2025-12-05 12:47:36,512 - __main__ - INFO - Starting Windows Event Collector...
+2025-12-05 12:47:36,536 - __main__ - INFO - Batch sender thread started
+2025-12-05 12:47:36,539 - __main__ - INFO - Starting monitoring for Application log
+2025-12-05 12:47:36,540 - __main__ - INFO - Starting monitoring for System log
+2025-12-05 12:47:36,541 - __main__ - INFO - Starting monitoring for Security log
+2025-12-05 12:47:36,541 - __main__ - INFO - Monitoring 3 event logs. Press Ctrl+C to stop.
+2025-12-05 12:47:36,544 - __main__ - INFO - Monitoring Application log - waiting for new events...
+2025-12-05 12:47:36,544 - __main__ - INFO - Monitoring System log - waiting for new events...
+2025-12-05 12:47:36,544 - __main__ - INFO - Monitoring Security log - waiting for new events...
+2025-12-05 12:47:45,825 - __main__ - INFO - Sent 3 events to backend
+2025-12-05 12:48:11,030 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:48:14,470 - __main__ - INFO - Sent 10 events to backend
+2025-12-05 12:48:17,636 - __main__ - INFO - Sent 10 events to backend
+2025-12-05 12:48:22,898 - __main__ - INFO - Sent 9 events to backend
+2025-12-05 12:48:27,391 - __main__ - INFO - Sent 5 events to backend
+2025-12-05 12:48:32,885 - __main__ - INFO - Sent 2 events to backend
+2025-12-05 12:48:38,318 - __main__ - INFO - Sent 4 events to backend
+2025-12-05 12:48:43,741 - __main__ - INFO - Sent 4 events to backend
+2025-12-05 12:49:12,350 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:51:01,936 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:51:08,182 - __main__ - INFO - Sent 5 events to backend
+2025-12-05 12:52:03,566 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:52:10,300 - __main__ - INFO - Sent 4 events to backend
+2025-12-05 12:52:38,746 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:52:44,007 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:53:25,621 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:53:34,598 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:53:36,974 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:53:40,923 - __main__ - INFO - Sent 10 events to backend
+2025-12-05 12:53:44,562 - __main__ - INFO - Sent 9 events to backend
+2025-12-05 12:54:03,659 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:54:09,179 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:54:13,764 - __main__ - INFO - Security: Processed 100 events
+2025-12-05 12:54:14,527 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:54:16,930 - __main__ - INFO - Sent 10 events to backend
+2025-12-05 12:54:19,382 - __main__ - INFO - Sent 10 events to backend
+2025-12-05 12:54:21,805 - __main__ - INFO - Sent 10 events to backend
+2025-12-05 12:54:24,285 - __main__ - INFO - Sent 10 events to backend
+2025-12-05 12:54:27,675 - __main__ - INFO - Sent 10 events to backend
+2025-12-05 12:54:30,118 - __main__ - INFO - Sent 10 events to backend
+2025-12-05 12:54:32,532 - __main__ - INFO - Sent 10 events to backend
+2025-12-05 12:54:38,072 - __main__ - INFO - Sent 2 events to backend
+2025-12-05 12:54:43,920 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:57:55,826 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:58:01,330 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:59:15,543 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 12:59:22,031 - __main__ - INFO - Sent 5 events to backend
+2025-12-05 13:00:05,182 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 13:00:09,683 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 13:02:08,866 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 13:02:14,375 - __main__ - INFO - Sent 1 events to backend
+2025-12-05 13:02:42,206 - __main__ - INFO - Shutdown signal received...
+2025-12-05 13:02:42,209 - __main__ - INFO - Waiting for threads to finish...
+2025-12-05 13:02:42,487 - __main__ - INFO - Stopped monitoring Security log (processed 150 events)
+2025-12-05 13:02:42,561 - __main__ - INFO - Stopped monitoring Application log (processed 14 events)
+2025-12-05 13:02:42,636 - __main__ - INFO - Batch sender thread stopped

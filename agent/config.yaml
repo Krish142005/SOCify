@@ -1,0 +1,55 @@
+# Socify Agent - Complete Windows Log Collection Configuration
+backend_url: http://localhost:8000/api/ingest
+
+log_files:
+  # Windows Event Logs (Main Security Logs)
+  - path: C:\Windows\System32\winevt\Logs\Security.evtx
+    type: windows_event
+  
+  - path: C:\Windows\System32\winevt\Logs\System.evtx
+    type: windows_event
+  
+  - path: C:\Windows\System32\winevt\Logs\Application.evtx
+    type: windows_event
+  
+  # PowerShell Activity Logs
+  - path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-PowerShell%4Operational.evtx
+    type: windows_event
+  
+  # Windows Defender Logs
+  - path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Windows Defender%4Operational.evtx
+    type: windows_event
+  
+  # Firewall Logs
+  - path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-Windows Firewall With Advanced Security%4Firewall.evtx
+    type: windows_event
+  
+  # Task Scheduler Logs
+  - path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-TaskScheduler%4Operational.evtx
+    type: windows_event
+  
+  # Remote Desktop Logs
+  - path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx
+    type: windows_event
+  
+  # Windows Update Logs
+  - path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-WindowsUpdateClient%4Operational.evtx
+    type: windows_event
+  
+  # DNS Client Logs
+  - path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-DNS-Client%4Operational.evtx
+    type: windows_event
+
+agent:
+  batch_size: 50
+  flush_interval: 10s
+  max_retries: 5
+  buffer_size: 5000
+
+metadata:
+  hostname: Shubhang
+  os: windows
+  tags:
+    - production
+    - windows-11
+    - endpoint-security
