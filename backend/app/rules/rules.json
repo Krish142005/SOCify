@@ -1,0 +1,809 @@
+[
+  {
+    "rule_id": "A001",
+    "rule_name": "Frequent .NET Runtime Crashes",
+    "type": "threshold",
+    "log_source": "application",
+    "match": {
+      "event.source": ".NET Runtime",
+      "event.level": "Error"
+    },
+    "threshold": 5,
+    "time_window": "10m",
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "A002",
+    "rule_name": "Application Error Spike",
+    "type": "threshold",
+    "log_source": "application",
+    "match": {
+      "event.source": "Application Error"
+    },
+    "threshold": 10,
+    "time_window": "5m",
+    "severity": "High"
+  },
+  {
+    "rule_id": "A003",
+    "rule_name": "MSI Installer Failure",
+    "type": "boolean",
+    "log_source": "application",
+    "match": {
+      "event.source": "MsiInstaller",
+      "event.id": 11708
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "A004",
+    "rule_name": "Suspicious MSI Installation",
+    "type": "boolean",
+    "log_source": "application",
+    "match": {
+      "event.source": "MsiInstaller",
+      "process.name_contains": "setup"
+    },
+    "severity": "Low"
+  },
+  {
+    "rule_id": "A005",
+    "rule_name": "Unknown Application Install Attempt",
+    "type": "boolean",
+    "log_source": "application",
+    "match": {
+      "event.source": "MsiInstaller",
+      "product.name_contains": "unknown"
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "A006",
+    "rule_name": "Outlook Add-in Crash",
+    "type": "boolean",
+    "log_source": "application",
+    "match": {
+      "event.source": "Outlook",
+      "event.level": "Error"
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "A007",
+    "rule_name": "Outlook Suspicious Macro Execution",
+    "type": "boolean",
+    "log_source": "application",
+    "match": {
+      "event.source": "Outlook",
+      "event.message_contains": "macro"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "A008",
+    "rule_name": "SQL Server Login Failures",
+    "type": "threshold",
+    "log_source": "application",
+    "match": {
+      "event.source": "MSSQLSERVER",
+      "event.id": 18456
+    },
+    "threshold": 3,
+    "time_window": "2m",
+    "severity": "High"
+  },
+  {
+    "rule_id": "A009",
+    "rule_name": "SQL Server Unexpected Shutdown",
+    "type": "boolean",
+    "log_source": "application",
+    "match": {
+      "event.source": "MSSQLSERVER",
+      "event.id": 17148
+    },
+    "severity": "Critical"
+  },
+  {
+    "rule_id": "A010",
+    "rule_name": "Application Hanging Detected",
+    "type": "boolean",
+    "log_source": "application",
+    "match": {
+      "event.id": 1002
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "A011",
+    "rule_name": "Faulting Module Crash Pattern",
+    "type": "threshold",
+    "log_source": "application",
+    "match": {
+      "event.source": "Application Error"
+    },
+    "group_by": [
+      "file.path"
+    ],
+    "threshold": 5,
+    "time_window": "10m",
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "A012",
+    "rule_name": "Application Executing Suspicious Script",
+    "type": "boolean",
+    "log_source": "application",
+    "match": {
+      "process.args_contains": [
+        ".vbs",
+        ".js",
+        "-encoded"
+      ]
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "A013",
+    "rule_name": "Unauthorized App Modification",
+    "type": "boolean",
+    "log_source": "application",
+    "match": {
+      "file.path_contains": "Program Files",
+      "event.action": "file_modify"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "A014",
+    "rule_name": "Outlook Unknown Add-in Installed",
+    "type": "boolean",
+    "log_source": "application",
+    "match": {
+      "event.source": "Outlook",
+      "file.extension": ".dll"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "A015",
+    "rule_name": "Suspected RCE Exploit In Application Error",
+    "type": "boolean",
+    "log_source": "application",
+    "match": {
+      "event.source": "Application Error",
+      "event.message_contains": "remote"
+    },
+    "severity": "Critical"
+  },
+  {
+    "rule_id": "S001",
+    "rule_name": "Unexpected Shutdown Kernel-Power 41",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Kernel-Power",
+      "event.id": 41
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "S002",
+    "rule_name": "Disk Failure Error",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Disk",
+      "event.level": "Error"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "S003",
+    "rule_name": "Repeated Disk Errors",
+    "type": "threshold",
+    "log_source": "system",
+    "match": {
+      "event.source": "Disk"
+    },
+    "threshold": 5,
+    "time_window": "5m",
+    "severity": "Critical"
+  },
+  {
+    "rule_id": "S004",
+    "rule_name": "Driver Installation Detected",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "DriverFrameworks-UserMode",
+      "event.id": 20001
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "S005",
+    "rule_name": "Suspicious New Driver Loaded",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Service Control Manager",
+      "file.extension": ".sys"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "S006",
+    "rule_name": "Service Failure Spike",
+    "type": "threshold",
+    "log_source": "system",
+    "match": {
+      "event.source": "Service Control Manager",
+      "event.level": "Error"
+    },
+    "threshold": 3,
+    "time_window": "5m",
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "S007",
+    "rule_name": "Service Disabled",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Service Control Manager",
+      "event.action": "service_disabled"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "S008",
+    "rule_name": "New Service Created",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Service Control Manager",
+      "event.action": "service_created"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "S009",
+    "rule_name": "New Network Interface Detected",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Tcpip",
+      "event.id": 4201
+    },
+    "severity": "Low"
+  },
+  {
+    "rule_id": "S010",
+    "rule_name": "IP Address Conflict",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Tcpip",
+      "event.id": 4199
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "S011",
+    "rule_name": "Host Connectivity Loss",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Tcpip",
+      "event.id": 10400
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "S012",
+    "rule_name": "Firewall Tampering",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Microsoft-Windows-Windows Firewall",
+      "event.action_contains": "disabled"
+    },
+    "severity": "Critical"
+  },
+  {
+    "rule_id": "S013",
+    "rule_name": "Windows Update Error",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "WindowsUpdateClient",
+      "event.level": "Error"
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "S014",
+    "rule_name": "Unexpected Forced Reboot",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.id": 1074,
+      "event.message_contains": "unexpected"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "S015",
+    "rule_name": "Driver Crash Loop",
+    "type": "threshold",
+    "log_source": "system",
+    "match": {
+      "event.source": "DriverFrameworks-UserMode"
+    },
+    "threshold": 4,
+    "time_window": "10m",
+    "severity": "High"
+  },
+  {
+    "rule_id": "S016",
+    "rule_name": "Unauthorized System Time Change",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "SecurityCenter",
+      "event.action": "time_change"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "S017",
+    "rule_name": "New System DLL Registered",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "file.extension": ".dll",
+      "event.action": "registry_write"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "S018",
+    "rule_name": "EventLog Service Restarted",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "EventLog",
+      "event.action": "service_restart"
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "S019",
+    "rule_name": "System Resource Exhaustion",
+    "type": "threshold",
+    "log_source": "system",
+    "match": {
+      "event.source": "Resource-Exhaustion-Detector"
+    },
+    "threshold": 3,
+    "time_window": "10m",
+    "severity": "High"
+  },
+  {
+    "rule_id": "S020",
+    "rule_name": "Boot Configuration Modified",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Kernel-General",
+      "event.action": "bootconfig_modified"
+    },
+    "severity": "Critical"
+  },
+  {
+    "rule_id": "SEC001",
+    "rule_name": "Multiple Failed Logons",
+    "type": "threshold",
+    "log_source": "security",
+    "match": {
+      "event.id": 4625
+    },
+    "threshold": 5,
+    "time_window": "3m",
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "SEC002",
+    "rule_name": "Brute Force Login Attempt",
+    "type": "threshold",
+    "log_source": "security",
+    "match": {
+      "event.id": 4625
+    },
+    "threshold": 20,
+    "time_window": "2m",
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC003",
+    "rule_name": "Successful Login After Failures",
+    "type": "correlation",
+    "log_source": "security",
+    "match": {
+      "fail.event": 4625,
+      "success.event": 4624
+    },
+    "threshold": 3,
+    "time_window": "5m",
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC004",
+    "rule_name": "Login Attempt Using Disabled Account",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4625,
+      "event.message_contains": "disabled"
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "SEC005",
+    "rule_name": "Local Administrator Login Detected",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4624,
+      "user.name": "Administrator"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC006",
+    "rule_name": "Login During Odd Hours",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4624
+    },
+    "time_condition": "00:00-05:00",
+    "severity": "Low"
+  },
+  {
+    "rule_id": "SEC007",
+    "rule_name": "User Account Locked Out",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4740
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "SEC008",
+    "rule_name": "User Added to Admin Group",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4732
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC009",
+    "rule_name": "User Removed From Admin Group",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4733
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC010",
+    "rule_name": "Password Change Attempt",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4723
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "SEC011",
+    "rule_name": "Privilege Escalation Attempt",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4672
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC012",
+    "rule_name": "RDP Login Detected",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4624,
+      "logon.type": 10
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "SEC013",
+    "rule_name": "Network Logon Spike",
+    "type": "threshold",
+    "log_source": "security",
+    "match": {
+      "event.id": 4624,
+      "logon.type": 3
+    },
+    "threshold": 30,
+    "time_window": "2m",
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "SEC014",
+    "rule_name": "New User Account Created",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4720
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC015",
+    "rule_name": "Security Log Cleared",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 1102
+    },
+    "severity": "Critical"
+  },
+  {
+    "rule_id": "SEC016",
+    "rule_name": "Audit Policy Changed",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4719
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC017",
+    "rule_name": "Suspicious Workstation Name (UNKNOWN)",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4624,
+      "workstation.name_contains": "UNKNOWN"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC018",
+    "rule_name": "VPN Login Detected",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4624,
+      "logon.type": 7
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "SEC019",
+    "rule_name": "Multiple Logoff Events",
+    "type": "threshold",
+    "log_source": "security",
+    "match": {
+      "event.id": 4634
+    },
+    "threshold": 20,
+    "time_window": "2m",
+    "severity": "Low"
+  },
+  {
+    "rule_id": "SEC020",
+    "rule_name": "Unauthorized Registry Modification",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4657
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC021",
+    "rule_name": "Access to Sensitive System Directory",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "file.path_contains": [
+        "System32",
+        "Security"
+      ]
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC022",
+    "rule_name": "Suspicious Process Execution (Encoded/BYPASS)",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4688,
+      "process.args_contains": [
+        "-encoded",
+        "-bypass",
+        "powershell"
+      ]
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC023",
+    "rule_name": "Remote Process Execution Tools",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4688,
+      "process.name_contains": [
+        "psexec",
+        "wmic",
+        "wmiexec"
+      ]
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC024",
+    "rule_name": "Internal Lateral Movement Authentication",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4624,
+      "logon.type": 3,
+      "source.ip_internal": true
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "SEC025",
+    "rule_name": "Failed Kerberos Authentication",
+    "type": "boolean",
+    "log_source": "security",
+    "match": {
+      "event.id": 4771
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "USB001",
+    "rule_name": "USB Storage Device Inserted",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Kernel-PnP",
+      "event.id": 410
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "USB002",
+    "rule_name": "USB Device Removed",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Kernel-PnP",
+      "event.id": 411
+    },
+    "severity": "Low"
+  },
+  {
+    "rule_id": "USB003",
+    "rule_name": "Mass Storage USB Device Connected",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "Kernel-PnP",
+      "device.type": "USBSTOR"
+    },
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "USB004",
+    "rule_name": "Unauthorized USB Vendor",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "usb.vendor_not_in": [
+        "Kingston",
+        "SanDisk",
+        "Sony"
+      ]
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "USB005",
+    "rule_name": "USB Device With Suspicious Name",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "usb.device_name_contains": [
+        "HACK",
+        "MALWARE",
+        "BADUSB"
+      ]
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "USB006",
+    "rule_name": "Executable Detected on Removable Storage",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "file.extension_in": [
+        ".exe",
+        ".bat",
+        ".ps1"
+      ],
+      "file.location_type": "removable"
+    },
+    "severity": "Critical"
+  },
+  {
+    "rule_id": "USB007",
+    "rule_name": "AutoRun.inf Found on USB",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "file.name": "autorun.inf"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "USB008",
+    "rule_name": "USB Device Triggered Driver Crash",
+    "type": "boolean",
+    "log_source": "system",
+    "match": {
+      "event.source": "DriverFrameworks-UserMode",
+      "event.level": "Error"
+    },
+    "severity": "High"
+  },
+  {
+    "rule_id": "USB009",
+    "rule_name": "Multiple USB Connect Attempts",
+    "type": "threshold",
+    "log_source": "system",
+    "match": {
+      "event.source": "Kernel-PnP",
+      "event.id": 410
+    },
+    "threshold": 5,
+    "time_window": "3m",
+    "severity": "Medium"
+  },
+  {
+    "rule_id": "USB010",
+    "rule_name": "High Data Transfer From Removable Device",
+    "type": "threshold",
+    "log_source": "system",
+    "match": {
+      "file.location_type": "removable",
+      "file.read_bytes_gt": 50000000
+    },
+    "threshold": 3,
+    "time_window": "5m",
+    "severity": "High"
+  }
+]
